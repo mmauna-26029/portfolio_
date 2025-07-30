@@ -637,9 +637,6 @@ img {
   }
 
   /* fv */
-  .fv {
-    height: calc(100vh-50px);
-  }
 
   .fv-text {
     font-size: 48px;
