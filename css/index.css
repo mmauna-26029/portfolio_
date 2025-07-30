@@ -70,7 +70,7 @@ img {
   margin-left: 0;
   margin-right: auto;
   background-color: #dfe2e0;
-  background-image: url("img/index/sprash.png");
+  background-image: url("/img/index/code-img.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -341,6 +341,7 @@ img {
   background-color: #89ff2f;
   color: #616161;
   font-size: 18px;
+  font-weight: 500;
 }
 
 .scroll-text::before {
@@ -640,12 +641,34 @@ img {
     height: calc(100vh-50px);
   }
 
-  /* .cat-pic img */
-  .cat-pic img {
-    max-width: 375px;
-    height: 375px;
+  .fv-text {
+    font-size: 48px;
   }
 
+  .fv-text-ja,
+  .fv-text-en {
+    font-size: 12px;
+  }
+
+  .fv-text-en {
+    margin-top: 6px;
+  }
+
+  /* .cat-pic img */
+  .cat-pic img {
+    max-width: 360px;
+    height: 360px;
+  }
+
+  .green-cat {
+    margin-right: 40px;
+  }
+
+  .pink-cat {
+    margin-right: 140px;
+  }
+
+  /* menu */
   .menu-btn {
     display: block;
   }
@@ -682,5 +705,26 @@ img {
   #menu-toggle:checked + .menu-btn span::after {
     transform: rotate(-45deg);
     top: 0;
+  }
+
+  .content-title {
+    font-size: 33px;
+  }
+
+  .section-inner {
+    max-width: 345px;
+  }
+
+  /* profile */
+  .profile-textarea {
+    padding: 65px 45px 35px 25px;
+    margin-top: 60px;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .textarea-title::after {
+    width: 45px;
   }
 }
