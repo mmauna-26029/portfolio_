@@ -148,6 +148,42 @@ img {
 }
 
 /* header-nav */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  display: none;
+  z-index: 1001;
+}
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  background: #333;
+  position: absolute;
+  transition: 0.3s;
+}
+.menu-btn span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.menu-btn span::before {
+  top: -8px;
+}
+.menu-btn span::after {
+  top: 8px;
+}
+
+.menu-toggle {
+  display: none;
+}
+
 .header-nav ul {
   position: fixed;
   display: inline-flex;
@@ -591,4 +627,60 @@ img {
   font-family: "Rock Salt", cursive;
   font-size: 25px;
   white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  /* body */
+  body {
+    font-size: 13px;
+  }
+
+  /* fv */
+  .fv {
+    height: calc(100vh-50px);
+  }
+
+  /* .cat-pic img */
+  .cat-pic img {
+    max-width: 375px;
+    height: 375px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 200px;
+    height: 100vh;
+    padding: 80px 20px;
+    margin: 0;
+    top: 0;
+    right: -220px;
+    border-radius: 0;
+    transition: 0.3s;
+  }
+
+  .header-nav li {
+    margin: 15px 0;
+  }
+
+  #menu-toggle:checked ~ .header-nav ul {
+    right: 0;
+  }
+
+  #menu-toggle:checked + .menu-btn span {
+    background: transparent;
+  }
+  #menu-toggle:checked + .menu-btn span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #menu-toggle:checked + .menu-btn span::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
 }
