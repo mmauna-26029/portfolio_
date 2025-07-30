@@ -177,27 +177,35 @@ img {
 
 .list-uroko::after {
   content: "WEB / 煮炊屋鱗様";
+  letter-spacing: normal;
 }
 .list-portfolio::after {
   content: "WEB / ポートフォリオ";
+  letter-spacing: normal;
 }
 .list-cookfood::after {
   content: "LP / クックフード様";
+  letter-spacing: normal;
 }
 .list-vage::after {
   content: "LP / ベジベジ農業様";
+  letter-spacing: normal;
 }
 .list-water::after {
   content: "LP / 水のトラブル.com様";
+  letter-spacing: normal;
 }
 .list-hamburger::after {
   content: "Banner / ハンバーガークーポン";
+  letter-spacing: normal;
 }
 .dtp::after {
   content: "コンペ採用 / アパレル販促用チラシ";
+  letter-spacing: normal;
 }
 .logo::after {
   content: "コンペ採用 / スイーツショップロゴ";
+  letter-spacing: normal;
 }
 
 .inner-list:hover::before {
@@ -262,7 +270,7 @@ img {
   bottom: -45px;
   margin-right: 0px;
   margin-left: -50px;
-  background-image: url(/img/index/sprash3.png);
+  background-image: url(img/index/sprash3.png);
   background-position: center;
   background-size: auto;
   background-repeat: no-repeat;
