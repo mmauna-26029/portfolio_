@@ -70,7 +70,7 @@ img {
   margin-left: 0;
   margin-right: auto;
   background-color: #dfe2e0;
-  background-image: url(img/index/sprash.png);
+  background-image: url(/img/index/sprash.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -183,7 +183,7 @@ img {
   flex-direction: column;
   max-width: 100vw;
   height: 100vh;
-  background-image: url(img/index/code-img.png);
+  background-image: url(/img/index/code-img.png);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
