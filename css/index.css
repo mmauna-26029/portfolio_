@@ -684,12 +684,12 @@ img {
   /* fv */
 
   .fv {
-    height: calc(100dvh-40px);
+    height: 98dvh;
   }
 
   .fv-back {
     max-width: 290px;
-    margin-top: 470px;
+    margin-top: 666px;
     margin-left: 20px;
   }
 
@@ -719,22 +719,28 @@ img {
     height: 360px;
   }
 
+  .orange-cat {
+    margin-top: 320px;
+  }
+
   .green-cat {
-    margin-right: 40px;
+    margin-top: 175px;
+    margin-right: 20px;
   }
 
   .pink-cat {
-    margin-right: 140px;
+    margin-top: 20px;
+    margin-right: 80px;
   }
 
   /* scroll */
   .scroll {
-    top: 80%;
-    left: -40px;
+    top: 87%;
+    left: -86px;
   }
 
   .scroll-text {
-    padding: 3px 10px 3px 90px;
+    padding: 3px 15px 3px 145px;
     background-color: #89ff2f;
     font-weight: 500;
     font-size: 11px;
@@ -786,12 +792,12 @@ img {
 
   /* section-content */
   .right {
-    top: -15px;
+    top: -10px;
     left: 0;
     font-size: 45px;
   }
   .left {
-    top: -15px;
+    top: -10px;
     right: 0;
     font-size: 45px;
   }
@@ -801,6 +807,11 @@ img {
   }
 
   /* profile */
+
+  .profile {
+    margin-top: 160px;
+  }
+
   .profile-textarea {
     padding: 65px 45px 35px 25px;
     margin-top: 50px;
@@ -839,6 +850,7 @@ img {
 
   /* service */
   .content-servicelistwrap {
+    position: static;
     display: flex;
     flex-direction: column;
     column-gap: 24px;
@@ -857,6 +869,7 @@ img {
   .servicelist-pic {
     width: 70px;
     height: 70px;
+    margin-top: 16px;
   }
 
   .servicelist-title::after {
@@ -873,6 +886,7 @@ img {
   } */
 
   .cotanct {
+    position: relative;
     display: flex;
     flex-direction: rows;
     justify-content: center;
@@ -919,14 +933,18 @@ img {
 
   .small-text {
     font-size: 12px;
-    margin-bottom: 240px;
+    margin-bottom: 0px;
+  }
+
+  .aboutcontact {
+    margin-bottom: 64px;
   }
 
   .contact-right {
     display: flex;
     flex-direction: column;
     max-width: 250px;
-    margin: 440px auto 194px 70px;
+    margin: 350px 22px 194px auto;
     align-items: flex-end;
   }
 
@@ -955,7 +973,7 @@ img {
   }
 
   .embellishments-text {
-    bottom: -10px;
+    bottom: -20px;
     margin-right: 0px;
     padding: 8px 10px;
     font-size: 10px;
