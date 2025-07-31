@@ -261,7 +261,7 @@ img {
 
 /* cat */
 .cat-pic {
-  position: relative;
+  position: absolute;
   display: inline-flex;
   justify-content: right;
   max-width: 100%;
