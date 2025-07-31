@@ -114,7 +114,7 @@ img {
   right: 175px;
   border-right: 4px solid #484848;
   border-bottom: 3px solid #484848;
-  border-radius: 5px;
+  border-radius: 10px;
   transform: skew(45deg);
   z-index: 1;
 }
@@ -159,6 +159,7 @@ img {
   display: none;
   z-index: 1001;
 }
+
 .menu-btn span,
 .menu-btn span::before,
 .menu-btn span::after {
@@ -170,13 +171,7 @@ img {
   position: absolute;
   transition: 0.3s;
 }
-.menu-btn span {
-  top: 50%;
-  transform: translateY(-50%);
-}
-.menu-btn span::before {
-  top: -8px;
-}
+
 .menu-btn span::after {
   top: 8px;
 }
@@ -219,20 +214,23 @@ img {
   display: flex;
   flex-direction: column;
   max-width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   background-image: url("../img/index/code-img.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
   letter-spacing: normal;
+  justify-content: center; /* ←縦中央寄せ */
+  align-items: flex-start; /* 左寄せ */
 }
 
 .fv-back {
-  position: absolute;
+  position: relative;
   max-width: 774px;
-  margin-top: 364px;
+  margin: 0 0 0 50px;
+  /* margin-top: 364px;
   margin-left: 50px;
-  margin-right: auto;
+  margin-right: auto; */
   z-index: 4;
   white-space: nowrap;
 }
