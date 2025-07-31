@@ -684,7 +684,7 @@ img {
   /* fv */
 
   .fv {
-    height: calc(100vh-40px);
+    height: calc(100dvh-40px);
   }
 
   .fv-back {
@@ -786,12 +786,12 @@ img {
 
   /* section-content */
   .right {
-    top: -7px;
+    top: -15px;
     left: 0;
     font-size: 45px;
   }
   .left {
-    top: -7px;
+    top: -15px;
     right: 0;
     font-size: 45px;
   }
@@ -850,13 +850,13 @@ img {
     flex-direction: column;
     width: 220px;
     height: 220px;
-    margin-top: 32px;
+    margin-top: 48px;
     margin-bottom: 32px;
   }
 
   .servicelist-pic {
-    width: 85px;
-    height: 85px;
+    width: 70px;
+    height: 70px;
   }
 
   .servicelist-title::after {
@@ -926,7 +926,7 @@ img {
     display: flex;
     flex-direction: column;
     max-width: 250px;
-    margin: 350px 70px 194px auto;
+    margin: 440px auto 194px 70px;
     align-items: flex-end;
   }
 
@@ -949,7 +949,7 @@ img {
   }
 
   .embellishments {
-    bottom: -10px;
+    bottom: 0px;
     right: 0px;
     transform: rotate(-5deg);
   }
