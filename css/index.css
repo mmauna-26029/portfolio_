@@ -261,13 +261,13 @@ img {
 
 /* cat */
 .cat-pic {
-  position: absolute;
   display: inline-flex;
   justify-content: right;
   max-width: 100%;
 }
 
 .cat-pic img {
+  position: absolute;
   max-width: 840px;
   height: 840px;
   animation-duration: 6s;
@@ -277,7 +277,6 @@ img {
 }
 
 .orange-cat {
-  position: absolute;
   z-index: 3;
   margin-top: 140px;
   right: 0;
@@ -286,7 +285,6 @@ img {
 }
 
 .green-cat {
-  position: absolute;
   z-index: 2;
   margin-top: 60px;
   margin-left: auto;
@@ -296,7 +294,6 @@ img {
 }
 
 .pink-cat {
-  position: absolute;
   z-index: 1;
   margin-top: auto;
   margin-left: auto;
@@ -343,7 +340,7 @@ img {
 
 .scroll-text {
   position: relative;
-  padding: 5px 10px 5px 160px;
+  padding: 5px 10px 5px 120px;
   background-color: #89ff2f;
   color: #616161;
   font-size: 18px;
@@ -354,7 +351,7 @@ img {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 120px;
+  width: 80px;
   height: 5px;
   top: calc(50%);
   right: 80px;
