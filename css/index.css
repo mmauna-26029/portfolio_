@@ -683,10 +683,6 @@ img {
 
   /* fv */
 
-  .fv {
-    height: 99dvh;
-  }
-
   .fv-back {
     max-width: 290px;
     margin-top: 600px;
