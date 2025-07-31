@@ -70,7 +70,7 @@ img {
   margin-left: 0;
   margin-right: auto;
   background-color: #dfe2e0;
-  background-image: url("../img/index/code-img.png");
+  background-image: url("../img/index/sp.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -661,7 +661,7 @@ img {
     width: 31px;
     height: 3px;
     top: calc(40%);
-    right: 30px;
+    right: -30px;
   }
 
   .more-button-text:hover::before {
@@ -681,16 +681,17 @@ img {
     max-width: 290px;
     margin-top: 440px;
     margin-left: 20px;
-    white-space: nowrap;
   }
 
   .fv-text {
-    font-size: 48px;
+    font-size: 47px;
   }
 
   .fv-text-ja,
   .fv-text-en {
-    font-size: 12px;
+    margin-top: 12px;
+    font-size: 9px;
+    white-space: nowrap;
   }
 
   .fv-text-en {
@@ -714,11 +715,11 @@ img {
   /* scroll */
   .scroll {
     top: 70%;
-    left: 0;
+    left: -20;
   }
 
   .scroll-text {
-    padding: 5px 10px 5px 48px;
+    padding: 5px 10px 5px 65px;
     background-color: #89ff2f;
     font-weight: 500;
   }
@@ -768,7 +769,7 @@ img {
 
   /* section-content */
   .content-title {
-    top: -2.3em;
+    top: 2.3em;
     left: 0;
     font-size: 45px;
   }
@@ -787,6 +788,11 @@ img {
     line-height: 181%;
   }
 
+  .textarea-comment {
+    margin-top: 14px;
+    line-height: 181%;
+  }
+
   .textarea-title::after {
     width: 45px;
   }
@@ -794,7 +800,7 @@ img {
   /* works */
   .inner-worklistwrap {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column-reverse;
     row-gap: 24px;
     margin: 78px 25px 90px 100px;
   }
@@ -812,14 +818,14 @@ img {
   /* service */
   .content-servicelistwrap {
     display: grid;
-    grid-template-rows: repeat(3, 220px);
-    row-gap: 40px;
+    grid-template-columns: repeat(3, 220px);
+    column-gap: 40px;
     padding: 87px 100px 90px 25px;
   }
 
   .content-servicelist {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 220px;
     height: 220px;
     margin-top: 18px;
@@ -874,30 +880,29 @@ img {
     margin-right: 7px;
   }
 
-  /* .contact-left {
+  .contact-left {
     display: grid;
-    grid-template-rows: repeat(3, 120px);
-    row-gap: 54px;
-  } */
+    grid-template-rows: repeat(3, 250px);
+    row-gap: 40px;
+  }
 
-  /* .list {
-    width: 540px;
-  } */
+  .list {
+    width: 250px;
+  }
 
-  /* .list-text {
-    font-size: 20px;
-    line-height: 31px;
-    margin-left: 1.7em;
-  } */
+  .list-text {
+    line-height: 16px;
+  }
 
   .small-text {
     font-size: 12px;
   }
 
-  /* .contact-right {
+  .contact-right {
     display: flex;
-    max-width: 420px;
-  } */
+    flex-direction: column;
+    max-width: 250px;
+  }
 
   .link-wrap {
     display: grid;
@@ -912,8 +917,11 @@ img {
     height: 100px;
   }
 
+  .speech-text {
+    font-size: 7px;
+  }
   .embellishments-text {
     margin-right: 0px;
-    padding: 8px 20px;
+    padding: 8px 10px;
   }
 }
