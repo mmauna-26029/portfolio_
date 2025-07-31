@@ -226,10 +226,10 @@ img {
   position: absolute;
   max-width: 774px;
   margin: 0 auto 0 50px;
-  /* margin-top: 364px;
+  margin-top: 364px;
   margin-left: 50px;
-  margin-right: auto; */
-  z-index: 3;
+  margin-right: auto;
+  z-index: 4;
   white-space: nowrap;
 }
 
@@ -684,7 +684,7 @@ img {
   /* fv */
 
   .fv {
-    height: calc(100vh-20px);
+    height: calc(100vh-40px);
   }
 
   .fv-back {
@@ -734,7 +734,7 @@ img {
   }
 
   .scroll-text {
-    padding: 3px 10px 3px 75px;
+    padding: 3px 10px 3px 90px;
     background-color: #89ff2f;
     font-weight: 500;
     font-size: 11px;
@@ -742,7 +742,7 @@ img {
 
   .scroll-text::before {
     width: 50px;
-    right: 40px;
+    right: 55px;
   }
 
   /* menu */
@@ -786,12 +786,12 @@ img {
 
   /* section-content */
   .right {
-    top: -3px;
+    top: -7px;
     left: 0;
     font-size: 45px;
   }
   .left {
-    top: -3px;
+    top: -7px;
     right: 0;
     font-size: 45px;
   }
@@ -851,7 +851,7 @@ img {
     width: 220px;
     height: 220px;
     margin-top: 32px;
-    margin-bottom: 48px;
+    margin-bottom: 32px;
   }
 
   .servicelist-pic {
@@ -919,14 +919,14 @@ img {
 
   .small-text {
     font-size: 12px;
-    margin-bottom: 160px;
+    margin-bottom: 240px;
   }
 
   .contact-right {
     display: flex;
     flex-direction: column;
     max-width: 250px;
-    margin: 310px 50px 194px auto;
+    margin: 350px 70px 194px auto;
     align-items: flex-end;
   }
 
