@@ -220,12 +220,10 @@ img {
   background-repeat: no-repeat;
   overflow: hidden;
   letter-spacing: normal;
-  justify-content: center; /* ←縦中央寄せ */
-  align-items: flex-start; /* 左寄せ */
 }
 
 .fv-back {
-  position: relative;
+  position: absolute;
   max-width: 774px;
   margin: 0 auto 0 50px;
   /* margin-top: 364px;
@@ -267,7 +265,7 @@ img {
 }
 
 .cat-pic img {
-  position: absolute;
+  display: block;
   max-width: 840px;
   height: 840px;
   animation-duration: 6s;
@@ -277,6 +275,7 @@ img {
 }
 
 .orange-cat {
+  position: absolute;
   z-index: 3;
   margin-top: 140px;
   right: 0;
@@ -285,6 +284,7 @@ img {
 }
 
 .green-cat {
+  position: absolute;
   z-index: 2;
   margin-top: 60px;
   margin-left: auto;
@@ -294,6 +294,7 @@ img {
 }
 
 .pink-cat {
+  position: absolute;
   z-index: 1;
   margin-top: auto;
   margin-left: auto;
@@ -918,16 +919,15 @@ img {
 
   .small-text {
     font-size: 12px;
-    margin-bottom: 80px;
+    margin-bottom: 160px;
   }
 
   .contact-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     max-width: 250px;
-    margin: 310px auto 194px auto;
-    align-items: center;
+    margin: 310px 50px 194px auto;
+    align-items: flex-end;
   }
 
   .link-wrap {
@@ -955,7 +955,7 @@ img {
   }
 
   .embellishments-text {
-    bottom: -40px;
+    bottom: -10px;
     margin-right: 0px;
     padding: 8px 10px;
     font-size: 10px;
