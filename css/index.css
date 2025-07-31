@@ -70,7 +70,7 @@ img {
   margin-left: 0;
   margin-right: auto;
   background-color: #dfe2e0;
-  background-image: url("../img/index/sp.png");
+  background-image: url("../img/index/sprash.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -686,7 +686,7 @@ img {
   /* fv */
 
   .fv {
-    height: 105dvh;
+    height: calc(100vh-20px);
   }
 
   .fv-back {
@@ -731,7 +731,7 @@ img {
 
   /* scroll */
   .scroll {
-    top: 70%;
+    top: 100%;
     left: -40px;
   }
 
@@ -744,6 +744,7 @@ img {
 
   .scroll-text::before {
     width: 50px;
+    right: 40px;
   }
 
   /* menu */
@@ -787,12 +788,12 @@ img {
 
   /* section-content */
   .right {
-    top: 0;
+    top: -5px;
     left: 0;
     font-size: 45px;
   }
   .left {
-    top: 0;
+    top: -5px;
     right: 0;
     font-size: 45px;
   }
@@ -920,16 +921,17 @@ img {
 
   .small-text {
     font-size: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
   }
 
   .contact-right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     max-width: 250px;
     margin-top: 270px;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: auto;
+    margin-right: auto;
     align-items: center;
   }
 
