@@ -684,12 +684,12 @@ img {
   /* fv */
 
   .fv {
-    height: 98dvh;
+    height: 88dvh;
   }
 
   .fv-back {
     max-width: 290px;
-    margin-top: 666px;
+    margin-top: 600px;
     margin-left: 20px;
   }
 
@@ -705,6 +705,9 @@ img {
     white-space: nowrap;
   }
 
+  .fv-text-ja {
+    margin-top: -17px;
+  }
   .fv-text-en {
     margin-top: 6px;
   }
@@ -735,12 +738,12 @@ img {
 
   /* scroll */
   .scroll {
-    top: 87%;
-    left: -86px;
+    top: 81%;
+    left: -54px;
   }
 
   .scroll-text {
-    padding: 3px 15px 3px 145px;
+    padding: 3px 15px 3px 90px;
     background-color: #89ff2f;
     font-weight: 500;
     font-size: 11px;
@@ -919,7 +922,7 @@ img {
   .contact-left {
     display: grid;
     grid-template-rows: repeat(3, 64px);
-    row-gap: 40px;
+    row-gap: 80px;
   }
 
   .list {
