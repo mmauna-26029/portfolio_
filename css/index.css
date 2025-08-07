@@ -267,7 +267,7 @@ img {
   display: inline-flex;
   justify-content: right;
   max-width: 100%;
-  bottom: 50%;
+  margin: 0 auto;
 }
 
 .cat-pic img {
@@ -339,7 +339,7 @@ img {
 /* scroll */
 .scroll {
   position: absolute;
-  bottom: 10%;
+  bottom: 9%;
   left: -40px;
   transform: rotate(-90deg);
 }
