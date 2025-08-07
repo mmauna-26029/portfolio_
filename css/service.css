@@ -99,7 +99,7 @@ img {
 .concept {
   position: relative;
   display: block;
-  margin-top: 440px;
+  top: 40%;
   text-align: center;
   color: #f6f6ef;
   font-family: "Zen Kaku Gothic New", sans-serif;
