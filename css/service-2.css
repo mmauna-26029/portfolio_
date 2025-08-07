@@ -101,6 +101,7 @@ img {
 }
 
 .concept {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,10 +109,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   color: #f6f6ef;
+  font-size: 30px;
+  line-height: 180%;
+  letter-spacing: 4%;
   z-index: 3;
 }
 
 .big-text {
+  margin-bottom: 1.2em;
   font-size: 70px;
 }
 
