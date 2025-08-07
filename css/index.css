@@ -267,7 +267,7 @@ img {
   display: inline-flex;
   justify-content: right;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 
 .cat-pic img {

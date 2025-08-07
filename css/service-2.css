@@ -114,21 +114,10 @@ img {
   font-size: 70px;
 }
 
-.concept::after {
-  content: "";
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 870px;
-  margin-left: auto;
-  margin-right: auto;
-  border: #f6f6ef 1px solid;
-}
-
 .orange-cat {
   position: relative;
-  width: 530px;
-  height: 530px;
+  width: 220px;
+  height: 220px;
   bottom: 0;
   right: 0;
   opacity: 0.3;
