@@ -97,16 +97,17 @@ img {
 .section-fv {
   display: flex;
   justify-content: center;
+  margin-top: 165px;
 }
 
 .concept {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 50%;
   margin-left: auto;
   margin-right: auto;
+  color: #f6f6ef;
   z-index: 3;
 }
 
@@ -115,11 +116,11 @@ img {
 }
 
 .orange-cat {
-  position: relative;
   width: 220px;
   height: 220px;
-  bottom: 0;
-  right: 0;
+  margin-top: 300px;
+  margin-left: 336px;
+  right: auto;
   opacity: 0.3;
 }
 
@@ -127,7 +128,7 @@ img {
   display: flex;
   justify-content: center;
   max-width: 720px;
-  margin-top: 400px;
+  margin-top: 142px;
   margin-left: auto;
   margin-right: auto;
 }
