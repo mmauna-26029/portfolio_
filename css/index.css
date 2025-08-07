@@ -265,29 +265,36 @@ img {
 
 /* cat */
 .cat-pic {
+  position: relative;
   display: inline-flex;
   justify-content: right;
   max-width: 100%;
 }
 
 .cat-pic img {
-  display: block;
   max-width: 840px;
   height: 840px;
   animation-duration: 6s;
   opacity: 0;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
+  /* display: block;
+  max-width: 840px;
+  height: 840px;
+  animation-duration: 6s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease; */
 }
 
 .orange-cat {
-  /* position: absolute;
+  position: absolute;
   z-index: 3;
   margin-top: 140px;
   right: 0;
   animation: fade-orange 1s forwards;
-  animation-delay: 0s; */
-  width: 330px;
+  animation-delay: 0s;
+  /* width: 330px;
   height: 420px;
   position: absolute;
   margin-top: 170px;
@@ -297,7 +304,7 @@ img {
   opacity: 0;
   transform: scale(1);
   transform-origin: center;
-  animation: catin 1.5s ease-out 1.2s forwards;
+  animation: catin 1.5s ease-out 1.2s forwards; */
 }
 
 .green-cat {
