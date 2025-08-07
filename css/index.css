@@ -180,7 +180,7 @@ img {
   display: none;
 }
 
-.header-nav ul {
+.header-nav {
   position: fixed;
   display: inline-flex;
   justify-content: space-between;
@@ -196,6 +196,18 @@ img {
   font-size: 18px;
   font-weight: 300;
   z-index: 999;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  padding: 18px 50px;
+  margin-top: 30px;
+  margin-left: 50px;
+  background-color: #fd8224;
+  border-radius: 70px;
 }
 
 .header-nav a:hover {
