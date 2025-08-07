@@ -83,6 +83,10 @@ img {
   background-repeat: no-repeat;
 }
 
+.textarea-title {
+  font-size: 23px;
+}
+
 .textarea-title::after {
   content: "";
   display: flex;
@@ -161,11 +165,12 @@ img {
 }
 
 .textarea-comment {
-  width: 100%;
+  width: 90%;
   margin-bottom: 72px;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 500;
   line-height: 205%;
+  letter-spacing: 4%;
   text-indent: 1em;
 }
 
