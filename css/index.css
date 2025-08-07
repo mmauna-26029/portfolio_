@@ -281,12 +281,23 @@ img {
 }
 
 .orange-cat {
-  position: absolute;
+  /* position: absolute;
   z-index: 3;
   margin-top: 140px;
   right: 0;
   animation: fade-orange 1s forwards;
-  animation-delay: 0s;
+  animation-delay: 0s; */
+  width: 330px;
+  height: 420px;
+  position: absolute;
+  margin-top: 170px;
+  margin-left: 775px;
+  margin-right: 500px;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(1);
+  transform-origin: center;
+  animation: catin 1.5s ease-out 1.2s forwards;
 }
 
 .green-cat {
