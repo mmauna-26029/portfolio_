@@ -759,6 +759,10 @@ img {
   }
 
   /* menu */
+  .menu-toggle {
+    display: block;
+  }
+
   .menu-btn {
     display: block;
   }

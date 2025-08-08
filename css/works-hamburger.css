@@ -44,28 +44,30 @@ img {
 /* scroll */
 .scroll {
   position: absolute;
-  top: 85%;
-  left: -50px;
+  bottom: 9%;
+  left: -40px;
   transform: rotate(-90deg);
 }
 
 .scroll-text {
   position: relative;
-  padding: 5px 7px 5px 155px;
+  padding: 5px 10px 5px 120px;
   background-color: #89ff2f;
-  font-size: 20px;
+  color: #616161;
+  font-size: 18px;
+  font-weight: 500;
 }
 
 .scroll-text::before {
   content: "";
   display: inline-block;
   position: absolute;
-  width: 120px;
+  width: 80px;
   height: 5px;
   top: calc(50%);
   right: 80px;
-  border-left: 1px solid #484848;
-  border-top: 1px solid #484848;
+  border-left: 1px solid #616161;
+  border-top: 1px solid #616161;
   transform: skew(45deg);
 }
 
