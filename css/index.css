@@ -153,37 +153,6 @@ img {
   display: none;
 }
 
-.menu-btn {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 22px;
-  cursor: pointer;
-  display: none;
-  z-index: 1001;
-}
-
-.menu-btn span,
-.menu-btn span::before,
-.menu-btn span::after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: #484848;
-  position: absolute;
-  transition: 0.3s;
-}
-
-.menu-btn span::after {
-  top: 8px;
-}
-
-.menu-toggle {
-  display: none;
-}
-
 .header-nav ul {
   position: fixed;
   display: inline-flex;
@@ -786,6 +755,17 @@ img {
     right: -220px;
     border-radius: 0;
     transition: 0.3s;
+  }
+
+  .menu-btn span {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .menu-btn span::before {
+    top: -10px;
+  }
+  .menu-btn span::after {
+    top: 10px;
   }
 
   .header-nav li {
