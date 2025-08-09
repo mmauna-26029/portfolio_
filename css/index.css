@@ -180,6 +180,10 @@ img {
   top: 8px;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .header-nav ul {
   position: fixed;
   display: inline-flex;
@@ -637,6 +641,7 @@ img {
   white-space: nowrap;
 }
 
+/* レスポンシブ */
 @media (max-width: 800px) {
   /* body */
   body {
@@ -688,11 +693,12 @@ img {
   .fv {
     max-height: calc(100vh - 50px);
   }
+
   .fv-back {
     max-width: 75%;
-    margin-top: 72%;
+    top: 72%;
     left: auto;
-    right: 26%;
+    right: 20%;
   }
 
   .fv-text {
@@ -760,7 +766,6 @@ img {
   .menu-toggle {
     display: block;
     top: 30px;
-    right: 8px;
   }
 
   .menu-btn {
@@ -768,6 +773,7 @@ img {
   }
 
   .header-nav ul {
+    position: relative;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
