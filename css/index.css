@@ -171,17 +171,13 @@ img {
   display: block;
   height: 3px;
   width: 100%;
-  background: #333;
+  background: #484848;
   position: absolute;
   transition: 0.3s;
 }
 
 .menu-btn span::after {
   top: 8px;
-}
-
-.menu-toggle {
-  display: none;
 }
 
 .header-nav ul {
@@ -701,7 +697,7 @@ img {
 
   .fv-text {
     font-size: 47px;
-    text-shadow: #484848 1px 1px 1px;
+    text-shadow: #484848 1px 1px 4px;
   }
 
   .fv-text-ja,
@@ -763,6 +759,8 @@ img {
   /* menu */
   .menu-toggle {
     display: block;
+    top: 30px;
+    right: 8px;
   }
 
   .menu-btn {
@@ -778,8 +776,7 @@ img {
     padding: 80px 20px;
     margin: 0;
     top: 0;
-    left: auto;
-    right: 0;
+    right: -220px;
     border-radius: 0;
     transition: 0.3s;
   }
