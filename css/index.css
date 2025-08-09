@@ -764,6 +764,7 @@ img {
 
   /* menu */
   .menu-toggle {
+    position: absolute;
     display: block;
     top: 30px;
   }
@@ -778,7 +779,7 @@ img {
     justify-content: flex-start;
     align-items: flex-start;
     width: 200px;
-    height: 100vh;
+    height: 80vh;
     padding: 80px 20px;
     margin: 0;
     top: 0;
