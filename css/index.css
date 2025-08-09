@@ -153,6 +153,55 @@ img {
   display: none;
 }
 
+.menu-btn {
+  display: inline-block;
+  cursor: pointer;
+  width: 30px;
+  height: 24px;
+  position: relative;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: #fd8224;
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+.menu-btn span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-btn span::before {
+  content: "";
+  top: -10px;
+}
+
+.menu-btn span::after {
+  content: "";
+  top: 10px;
+}
+
+#menu-toggle:checked + .menu-btn span {
+  background-color: transparent;
+}
+
+#menu-toggle:checked + .menu-btn span::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#menu-toggle:checked + .menu-btn span::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
 .header-nav ul {
   position: fixed;
   display: inline-flex;
@@ -715,8 +764,8 @@ img {
 
   /* scroll */
   .scroll {
-    top: 81%;
-    left: -54px;
+    top: 92%;
+    left: -68px;
   }
 
   .scroll-text {
@@ -732,7 +781,7 @@ img {
   }
 
   /* menu */
-  .menu-toggle {
+  /* .menu-toggle {
     position: absolute;
     display: block;
     top: 30px;
@@ -793,6 +842,37 @@ img {
   #menu-toggle:checked + .menu-btn span::after {
     transform: rotate(-45deg);
     top: 0;
+  } */
+  .header-nav nav {
+    position: fixed;
+    top: 0;
+    right: -100%; /* 初期は画面外 */
+    width: 70%;
+    height: 100%;
+    background-color: #fd8224;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+  }
+
+  .header-nav nav ul {
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 20px;
+  }
+
+  /* チェックONでスライドイン */
+  #menu-toggle:checked ~ nav {
+    right: 0;
+  }
+
+  /* ハンバーガー表示 */
+  .headermenu-toggle {
+    display: block;
+  }
+
+  /* PC時のメニュー非表示 */
+  .header-nav nav ul {
+    display: flex;
   }
 
   /* section-content */
