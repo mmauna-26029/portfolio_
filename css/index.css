@@ -656,8 +656,9 @@ img {
 
   .more-button-text {
     padding: 15px 10px;
-    background-color: #89ff2f;
+    background-color: #484848;
     border-radius: 8px;
+    color: #89ff2f;
     font-size: 12px;
     letter-spacing: normal;
   }
@@ -689,17 +690,16 @@ img {
   /* fv */
 
   .fv {
-    max-height: 700px;
+    max-height: calc(100vh - 50px);
   }
   .fv-back {
     max-width: 290px;
-    margin-top: 600px;
+    margin-top: 300px;
     margin-left: 20px;
   }
 
   .fv-text {
     font-size: 47px;
-    line-break: strict;
   }
 
   .fv-text-ja,
