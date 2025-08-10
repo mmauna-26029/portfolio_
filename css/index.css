@@ -861,7 +861,7 @@ img {
 
   /* 開いたとき */
   #menu-toggle:checked ~ .header-nav ul {
-    right: 0;
+    right: 220px;
   }
 
   /* ハンバーガー → ✕ アニメーション */
