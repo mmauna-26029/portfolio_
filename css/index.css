@@ -843,8 +843,8 @@ img {
 
   .header-nav ul {
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: flex-end;
+    align-items: flex-end;
     width: 200px;
     height: 100vh;
     padding: 80px 20px;
@@ -861,7 +861,7 @@ img {
 
   /* 開いたとき */
   #menu-toggle:checked ~ .header-nav ul {
-    right: 220px;
+    right: 0px;
   }
 
   /* ハンバーガー → ✕ アニメーション */
