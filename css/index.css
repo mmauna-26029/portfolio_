@@ -414,7 +414,7 @@ img {
   margin-bottom: 64px;
   font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 500;
-  line-height: 170%;
+  line-height: 200%;
 }
 
 .green-mark {
@@ -437,28 +437,22 @@ img {
 }
 
 .worklist-text {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: center;
   font-size: 16px;
   font-weight: 400;
 }
 
 .worklist-text.charge {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
   border: #616161 solid 1px;
-  padding: 3px 8px;
-  margin-right: 8px;
+  padding: 4px 4px;
+  margin-top: 8px;
+  margin-right: 2px;
+  font-size: 13px;
+  letter-spacing: normal;
 }
-/* .type::after {
-  content: "";
-  width: 1px;
-  height: 17px;
-  margin-left: 6px;
-  margin-right: 3px;
-  border: #616161 solid 1px;
-  transform: rotate(20deg);
-} */
 
 /* service */
 .content-servicelistwrap {
@@ -854,12 +848,16 @@ img {
   } */
   .header-nav nav {
     position: fixed;
+    display: flex;
+    justify-content: flex-end; /* ナビ右寄せ */
+    align-items: center;
+    padding: 10px 20px;
     top: 0;
     right: -100%; /* 初期は画面外 */
     width: 70%;
     height: 100%;
     background-color: #fd8224;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     transition: right 0.3s ease;
   }
 
