@@ -150,59 +150,46 @@ img {
 
 /* header-nav */
 .headermenu-toggle {
-  display: none;
+  display: none; /* デフォルトは非表示（PC用） */
 }
-
 .menu-btn {
-  position: absolute;
-  display: inline-block;
-  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  right: 20px;
   width: 30px;
-  height: 24px;
-  margin-top: 30px;
+  height: 22px;
+  cursor: pointer;
+  display: none; /* デフォルトは非表示（PC用） */
+  z-index: 1001;
 }
-
 .menu-btn span,
 .menu-btn span::before,
 .menu-btn span::after {
+  content: "";
   display: block;
-  position: absolute;
   height: 3px;
   width: 100%;
-  background-color: #fd8224;
-  transition: all 0.3s ease;
-  border-radius: 2px;
+  background: #333;
+  position: absolute;
+  transition: 0.3s;
 }
-
 .menu-btn span {
   top: 50%;
   transform: translateY(-50%);
 }
-
 .menu-btn span::before {
-  content: "";
-  top: -10px;
+  top: -8px;
 }
-
 .menu-btn span::after {
-  content: "";
-  top: 10px;
+  top: 8px;
 }
 
-#menu-toggle:checked + .menu-btn span {
-  background-color: transparent;
+/* チェックボックス */
+#menu-toggle {
+  display: none;
 }
 
-#menu-toggle:checked + .menu-btn span::before {
-  transform: rotate(45deg);
-  top: 0;
-}
-
-#menu-toggle:checked + .menu-btn span::after {
-  transform: rotate(-45deg);
-  top: 0;
-}
-
+/* メニュー本体 */
 .header-nav ul {
   position: fixed;
   display: inline-flex;
@@ -224,11 +211,10 @@ img {
 .header-nav a:hover {
   content: "";
   padding: 10px 18px;
-  background-color: #616161;
+  background-color: #484848;
   border-radius: 20px;
   color: #89ff2f;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.3s;
+  transition: 0.3s ease-in-out;
 }
 
 /* fv */
@@ -846,40 +832,49 @@ img {
     transform: rotate(-45deg);
     top: 0;
   } */
-  .header-nav nav {
-    position: fixed;
-    display: flex;
-    justify-content: flex-end; /* ナビ右寄せ */
-    align-items: center;
-    padding: 10px 20px;
-    top: 0;
-    right: -100%; /* 初期は画面外 */
-    width: 70%;
-    height: 100%;
-    background-color: #fd8224;
-    /* padding-top: 60px; */
-    transition: right 0.3s ease;
-  }
 
-  .header-nav nav ul {
-    flex-direction: column;
-    gap: 30px;
-    padding-left: 20px;
-  }
-
-  /* チェックONでスライドイン */
-  #menu-toggle:checked ~ nav {
-    right: 0;
-  }
-
-  /* ハンバーガー表示 */
   .headermenu-toggle {
     display: block;
   }
 
-  /* PC時のメニュー非表示 */
-  .header-nav nav ul {
-    display: flex;
+  .menu-btn {
+    display: block;
+  }
+
+  .header-nav ul {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 200px;
+    height: 100vh;
+    padding: 80px 20px;
+    margin: 0;
+    top: 0;
+    right: -220px; /* 隠した状態 */
+    border-radius: 0;
+    transition: 0.3s;
+  }
+
+  .header-nav li {
+    margin: 15px 0;
+  }
+
+  /* 開いたとき */
+  #menu-toggle:checked ~ .header-nav ul {
+    right: 0;
+  }
+
+  /* ハンバーガー → ✕ アニメーション */
+  #menu-toggle:checked + .menu-btn span {
+    background: transparent;
+  }
+  #menu-toggle:checked + .menu-btn span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #menu-toggle:checked + .menu-btn span::after {
+    transform: rotate(-45deg);
+    top: 0;
   }
 
   /* section-content */
