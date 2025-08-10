@@ -840,7 +840,19 @@ img {
     transform: rotate(-45deg);
     top: 0;
   } */
+  nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    transform: translateY(-100%);
+    transition: 0.3s;
+  }
 
+  #menu-toggle:checked ~ nav {
+    transform: translateY(0);
+  }
   .headermenu-toggle {
     display: block;
   }
