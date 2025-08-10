@@ -840,61 +840,28 @@ img {
     transform: rotate(-45deg);
     top: 0;
   } */
-  nav {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: #fff;
-    transform: translateY(-100%);
-    transition: 0.3s;
-  }
-
-  #menu-toggle:checked ~ nav {
-    transform: translateY(0);
-  }
-  .headermenu-toggle {
-    display: block;
-  }
-
   .menu-btn {
-    display: block;
+    display: none;
   }
 
-  .header-nav ul {
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-end;
-    width: 200px;
-    height: 100vh;
-    padding: 80px 20px;
-    margin: 0;
-    top: 0;
-    right: -220px; /* 隠した状態 */
-    border-radius: 0;
-    transition: 0.3s;
+  nav {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    width: auto;
   }
 
-  .header-nav li {
-    margin: 15px 0;
+  nav ul {
+    display: flex;
+    gap: 20px;
   }
 
-  /* 開いたとき */
-  #menu-toggle:checked ~ .header-nav ul {
-    right: 0px;
+  nav ul li {
+    border: none;
   }
 
-  /* ハンバーガー → ✕ アニメーション */
-  #menu-toggle:checked + .menu-btn span {
-    background: transparent;
-  }
-  #menu-toggle:checked + .menu-btn span::before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-  #menu-toggle:checked + .menu-btn span::after {
-    transform: rotate(-45deg);
-    top: 0;
+  nav ul li a {
+    padding: 0;
   }
 
   /* section-content */
