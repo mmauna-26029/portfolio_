@@ -149,6 +149,10 @@ img {
 }
 
 /* header-nav */
+.header {
+  position: relative;
+}
+
 .headermenu-toggle {
   display: none; /* デフォルトは非表示（PC用） */
 }
@@ -190,6 +194,10 @@ img {
 }
 
 /* メニュー本体 */
+.header-nav {
+  position: absolute;
+}
+
 .header-nav ul {
   position: fixed;
   display: inline-flex;
