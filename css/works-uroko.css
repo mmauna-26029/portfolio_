@@ -319,6 +319,14 @@ img {
   transition-timing-function: ease-in-out;
 }
 
+.back-button {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 50px;
+  border-bottom: #484848 2px solid;
+  font-size: 15px;
+}
+
 /* contact */
 .cotanct {
   display: flex;
