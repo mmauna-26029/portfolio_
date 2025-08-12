@@ -320,11 +320,12 @@ img {
 }
 
 .back-button {
+  position: absolute;
   display: inline-block;
-  margin-top: 0;
-  margin-right: 50px;
+  margin-top: 20px;
+  right: 20%;
   border-bottom: #484848 2px solid;
-  font-size: 15px;
+  font-size: 17px;
 }
 
 /* contact */
