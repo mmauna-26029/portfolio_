@@ -163,7 +163,7 @@ img {
 
 /* ハンバーガーアイコン */
 .menu-btn {
-  display: inline-block;
+  display: none;
   cursor: pointer;
   width: 30px;
   height: 24px;
