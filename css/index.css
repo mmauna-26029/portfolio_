@@ -149,7 +149,7 @@ img {
 }
 
 /* header-nav */
-.header {
+/* .header {
   background: transparent;
 }
 
@@ -159,10 +159,10 @@ img {
 
 .menu-toggle {
   display: none;
-}
+} */
 
 /* ハンバーガーアイコン */
-.menu-btn {
+/* .menu-btn {
   display: none;
   cursor: pointer;
   width: 30px;
@@ -178,10 +178,10 @@ img {
   background: #333;
   margin: 5px 0;
   transition: 0.3s;
-}
+} */
 
 /* ×になる動き */
-.menu-toggle:checked + .menu-btn span:nth-child(1) {
+/* .menu-toggle:checked + .menu-btn span:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
 }
 .menu-toggle:checked + .menu-btn span:nth-child(2) {
@@ -189,10 +189,10 @@ img {
 }
 .menu-toggle:checked + .menu-btn span:nth-child(3) {
   transform: translateY(-8px) rotate(-45deg);
-}
+} */
 
 /* メニュー部分：スマホ時は隠す */
-.menu {
+/* .menu {
   transform: translateY(-10px);
   opacity: 0;
   max-height: 0;
@@ -222,9 +222,9 @@ img {
 }
 .menu li a:hover {
   background: #f0f0f0;
-}
+} */
 
-/* .header-nav ul {
+.header-nav ul {
   position: fixed;
   display: inline-flex;
   justify-content: space-between;
@@ -249,7 +249,7 @@ img {
   border-radius: 20px;
   color: #89ff2f;
   transition: 0.3s ease-in-out;
-} */
+}
 
 /* fv */
 .fv-img {
