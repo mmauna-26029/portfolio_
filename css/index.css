@@ -224,6 +224,9 @@ img {
   background: #f0f0f0;
 } */
 
+.menu-toggle {
+  display: none;
+}
 .header-nav ul {
   position: fixed;
   display: inline-flex;
