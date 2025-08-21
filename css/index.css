@@ -628,7 +628,7 @@ img {
 
 .link-wrap {
   display: grid;
-  grid-template-columns: repeat(4, 40px);
+  grid-template-columns: repeat(5, 40px);
   column-gap: 54px;
   margin-left: 2em;
   text-align: center;
@@ -641,6 +641,11 @@ img {
   text-align: center;
   font-weight: 400;
   letter-spacing: normal;
+}
+
+.webform img {
+  width: 40px;
+  height: 40px;
 }
 
 .speech {
