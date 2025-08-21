@@ -319,13 +319,43 @@ img {
   transition-timing-function: ease-in-out;
 }
 
+/* back-button */
 .back-button {
   position: absolute;
   display: inline-block;
   margin-top: 20px;
-  right: 20%;
-  border-bottom: #484848 2px solid;
-  font-size: 17px;
+  right: 10%;
+  border-bottom: #f6f6ef 2px solid;
+  font-size: 20px;
+}
+
+.back-arrow {
+  position: relative;
+  display: inline-block;
+  width: 33px;
+  height: 62px;
+  margin-left: 16px;
+}
+
+.back-arrow::before,
+.back-arrow::after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 1px);
+  right: 0;
+  width: 45px;
+  height: 2px;
+  border-radius: 9999px;
+  background-color: #000000;
+  transform-origin: calc(100% - 1px) 50%;
+}
+
+.back-arrow::before {
+  transform: rotate(45deg);
+}
+
+.back-arrow::after {
+  transform: rotate(-45deg);
 }
 
 /* contact */
