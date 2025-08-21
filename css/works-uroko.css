@@ -334,7 +334,9 @@ img {
   display: inline-block;
   width: 33px;
   height: 14px;
-  margin-left: 16px;
+  margin-left: 2px;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .back-arrow::before,
@@ -348,6 +350,8 @@ img {
   border-radius: 9999px;
   background-color: #f6f6ef;
   transform-origin: calc(100% - 1px) 50%;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
 }
 
 .back-arrow::before {
@@ -356,6 +360,16 @@ img {
 
 .back-arrow::after {
   transform: rotate(-45deg);
+}
+
+.back-button:hover {
+  content: "";
+  color: #484848;
+}
+
+.back-arrow:hover :before,
+.back-arrow:hover :after {
+  background-color: #484848;
 }
 
 /* contact */
