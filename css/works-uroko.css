@@ -322,10 +322,10 @@ img {
 /* back-button */
 .back-button {
   display: inline-block;
-  width: 40px;
+  width: 120px;
   height: 40px;
   margin-top: 20px;
-  right: 10%;
+  right: 30%;
 }
 
 .back-arrow {
