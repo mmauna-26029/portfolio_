@@ -204,13 +204,13 @@ img {
 }
 
 .hamburger-btn .bar1 {
-  top: 10px;
+  top: 0px;
 }
 .hamburger-btn .bar2 {
   top: 15px;
 }
 .hamburger-btn .bar3 {
-  top: 10px;
+  top: 30px;
 }
 
 /* ハンバーガーアイコンがクリックされた時のスタイル */
