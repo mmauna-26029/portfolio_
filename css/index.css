@@ -176,9 +176,7 @@ img {
 }
 
 /* チェックボックスを非表示にする */
-.header-toggle {
-  display: none;
-}
+
 #hamburger-check {
   display: none;
 }
@@ -667,9 +665,6 @@ img {
 /* レスポンシブ用ナビゲーションメニュー */
 @media (max-width: 768px) {
   /* menu */
-  .header-toggle {
-    display: block;
-  }
 
   .header-nav ul {
     /* PC版メニューを非表示にし、スマホ版メニューのレイアウトを設定 */
