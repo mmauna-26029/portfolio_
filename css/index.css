@@ -223,7 +223,7 @@ img {
 }
 #hamburger-check:checked ~ .hamburger-btn .bar3 {
   transform: rotate(-45deg);
-  bottom: 15px;
+  top: 15px;
 }
 
 /* fv */
