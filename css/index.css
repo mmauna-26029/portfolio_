@@ -148,83 +148,6 @@ img {
   right: auto;
 }
 
-/* header-nav */
-/* .header {
-  background: transparent;
-}
-
-.header-nav {
-  position: relative;
-}
-
-.menu-toggle {
-  display: none;
-} */
-
-/* ハンバーガーアイコン */
-/* .menu-btn {
-  display: none;
-  cursor: pointer;
-  width: 30px;
-  height: 24px;
-  position: absolute;
-  right: 15px;
-  top: 15px;
-  z-index: 1001;
-}
-.menu-btn span {
-  display: block;
-  height: 3px;
-  background: #333;
-  margin: 5px 0;
-  transition: 0.3s;
-} */
-
-/* ×になる動き */
-/* .menu-toggle:checked + .menu-btn span:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-.menu-toggle:checked + .menu-btn span:nth-child(2) {
-  opacity: 0;
-}
-.menu-toggle:checked + .menu-btn span:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-} */
-
-/* メニュー部分：スマホ時は隠す */
-/* .menu {
-  transform: translateY(-10px);
-  opacity: 0;
-  max-height: 0;
-  overflow: hidden;
-  transition: transform 0.4s ease, opacity 0.4s ease, max-height 0.4s ease;
-}
-
-.menu-toggle:checked ~ .menu {
-  transform: translateY(0);
-  opacity: 1;
-  max-height: 500px;
-}
-
-.menu ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.menu li {
-  border-top: 1px solid #ddd;
-}
-.menu li a {
-  display: block;
-  padding: 12px;
-  text-decoration: none;
-  color: #333;
-}
-.menu li a:hover {
-  background: #f0f0f0;
-} */
-
-
 .header-nav ul {
   position: fixed;
   display: inline-flex;
@@ -253,6 +176,9 @@ img {
 }
 
 /* チェックボックスを非表示にする */
+.header-toggle {
+  display: none;
+}
 #hamburger-check {
   display: none;
 }
@@ -279,9 +205,9 @@ img {
   transition: all 0.3s ease-in-out;
 }
 
-.hamburger-btn .bar1 { top: 0; }
+.hamburger-btn .bar1 { top: 10px; }
 .hamburger-btn .bar2 { top: 15px; }
-.hamburger-btn .bar3 { bottom: 0; }
+.hamburger-btn .bar3 { top: 10px; }
 
 /* ハンバーガーアイコンがクリックされた時のスタイル */
 #hamburger-check:checked ~ .hamburger-btn .bar1 {
@@ -863,7 +789,7 @@ img {
     width: 100%;
     height: 100vh;
     padding-top: 80px;
-    background-color: #f6f6ef;
+    background-color: #484848;
     transition: all 0.3s ease-in-out;
     border-radius: 0;
     margin: 0;
@@ -872,6 +798,7 @@ img {
   .header-nav ul li {
     text-align: center;
     margin: 20px 0;
+    color: #89ff2f;
   }
 
   /* ハンバーガーアイコンを表示する */
