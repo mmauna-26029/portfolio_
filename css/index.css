@@ -713,15 +713,15 @@ img {
 
   .more-button-text {
     padding: 15px 10px;
-    background-color: #484848;
+    background-color: #fd8224;
     border-radius: 8px;
-    color: #89ff2f;
+    color: #f6f6ef;
     font-size: 12px;
     letter-spacing: normal;
   }
 
   .more-button-text:hover {
-    background-color: #f6f6ef;
+    background-color: #484848;
   }
 
   .circle {
@@ -751,8 +751,8 @@ img {
   }
 
   .fv-back {
-    max-width: 75%;
-    top: 72%;
+    max-width: 84%;
+    top: 81%;
     left: auto;
     right: 20%;
   }
@@ -802,8 +802,8 @@ img {
 
   /* scroll */
   .scroll {
-    top: 92%;
-    left: -68px;
+    top: 51%;
+    left: 100px;
   }
 
   .scroll-text {
@@ -820,14 +820,16 @@ img {
 
   /* section-content */
   .right {
-    top: -10px;
-    left: 0;
-    font-size: 45px;
+    top: 55px;
+    left: -56px;
+    font-size: 37px;
+    color: #f6f6ef;
   }
   .left {
-    top: -10px;
-    right: 0;
-    font-size: 45px;
+    top: 50px;
+    right: -48px;
+    font-size: 37px;
+    color: #f6f6ef;
   }
 
   .section-inner {
@@ -903,15 +905,6 @@ img {
   .servicelist-title::after {
     width: 28px;
   }
-
-  /* .servicelist-text {
-    font-size: 13px;
-    font-weight: 600;
-    text-align: left;
-    padding-bottom: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-  } */
 
   .cotanct {
     position: relative;
