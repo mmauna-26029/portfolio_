@@ -224,9 +224,7 @@ img {
   background: #f0f0f0;
 } */
 
-.menu-toggle {
-  display: none;
-}
+
 .header-nav ul {
   position: fixed;
   display: inline-flex;
@@ -252,6 +250,50 @@ img {
   border-radius: 20px;
   color: #89ff2f;
   transition: 0.3s ease-in-out;
+}
+
+/* チェックボックスを非表示にする */
+#hamburger-check {
+  display: none;
+}
+
+/* ハンバーガーアイコンのスタイル */
+.hamburger-btn {
+  display: none; /* スマホ画面になるまで非表示 */
+  position: fixed;
+  top: 30px;
+  right: 20px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.hamburger-btn span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #fd8224;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger-btn .bar1 { top: 0; }
+.hamburger-btn .bar2 { top: 15px; }
+.hamburger-btn .bar3 { bottom: 0; }
+
+/* ハンバーガーアイコンがクリックされた時のスタイル */
+#hamburger-check:checked ~ .hamburger-btn .bar1 {
+  transform: rotate(45deg);
+  top: 15px;
+}
+#hamburger-check:checked ~ .hamburger-btn .bar2 {
+  opacity: 0;
+}
+#hamburger-check:checked ~ .hamburger-btn .bar3 {
+  transform: rotate(-45deg);
+  top: 15px;
 }
 
 /* fv */
@@ -812,132 +854,37 @@ img {
   }
 
   /* menu */
-  /* .menu-toggle {
-    position: absolute;
+.header-nav ul {
+    /* PC版メニューを非表示にし、スマホ版メニューのレイアウトを設定 */
     display: block;
-    top: 30px;
-  }
-
-  .menu-btn {
     position: fixed;
-    display: block;
-    top: 20px;
-    right: 20px;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 1000;
-  }
-
-  .header-nav ul {
-    position: relative;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: 200px;
-    height: 80vh;
-    padding: 80px 20px;
-    margin: 0;
     top: 0;
-    right: -220px;
+    left: 100%; /* 画面外に隠す */
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+    background-color: #f6f6ef;
+    transition: all 0.3s ease-in-out;
     border-radius: 0;
-    transition: 0.3s;
+    margin: 0;
   }
 
-  .menu-btn span {
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  .menu-btn span::before {
-    top: -10px;
-  }
-  .menu-btn span::after {
-    top: 10px;
+  .header-nav ul li {
+    text-align: center;
+    margin: 20px 0;
   }
 
-  .header-nav li {
-    margin: 15px 0;
+  /* ハンバーガーアイコンを表示する */
+  .hamburger-btn {
+    display: block;
   }
 
-  #menu-toggle:checked ~ .header-nav ul {
-    right: 0;
+  /* ハンバーガーメニューが開いた時のスタイル */
+  #hamburger-check:checked ~ nav ul {
+    left: 0; /* メニューを画面内に表示 */
   }
+}
 
-  #menu-toggle:checked + .menu-btn span {
-    background: transparent;
-  }
-  #menu-toggle:checked + .menu-btn span::before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-  #menu-toggle:checked + .menu-btn span::after {
-    transform: rotate(-45deg);
-    top: 0;
-  } */
-  /* .menu-btn {
-    display: none;
-  }
-
-  nav {
-    position: static;
-    transform: none;
-    box-shadow: none;
-    width: auto;
-  }
-
-  nav ul {
-    display: flex;
-    gap: 20px;
-  }
-
-  nav ul li {
-    border: none;
-  }
-
-  nav ul li a {
-    padding: 0;
-  } */
-
-  .menu-btn {
-    display: none;
-  }
-  .menu {
-    transform: none;
-    opacity: 1;
-    max-height: none;
-  }
-  .menu ul {
-    position: fixed;
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 626px;
-    height: 65px;
-    padding: 18px 50px;
-    margin-top: 30px;
-    margin-left: 50px;
-    background-color: #fd8224;
-    border-radius: 70px;
-    color: #f6f6ef;
-    font-size: 18px;
-    font-weight: 300;
-    z-index: 999;
-  }
-  .menu li {
-    border: none;
-  }
-  .menu li a {
-    text-decoration: none;
-    color: #f6f6ef;
-    padding: 0 10px;
-    transition: 0.3s ease-in-out;
-  }
-  .menu li a:hover {
-    padding: 10px 18px;
-    background-color: #484848;
-    border-radius: 20px;
-    color: #89ff2f;
-  }
 
   /* section-content */
   .right {
