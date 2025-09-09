@@ -824,12 +824,14 @@ img {
     left: -56px;
     font-size: 37px;
     color: #f6f6ef;
+    transform: rotate(90deg);
   }
   .left {
     top: 50px;
     right: -48px;
     font-size: 37px;
     color: #f6f6ef;
+    transform: rotate(90deg);
   }
 
   .section-inner {
@@ -973,6 +975,7 @@ img {
     display: grid;
     grid-template-columns: repeat(5, 25px);
     column-gap: 35px;
+    margin-top: 20px;
     margin-left: 2em;
     font-size: 12px;
   }
